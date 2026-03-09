@@ -1,6 +1,6 @@
 <!--
  * @Date: 2026-03-07 10:11:16
- * @LastEditTime: 2026-03-09 11:35:15
+ * @LastEditTime: 2026-03-09 13:20:19
  * @Description: 
 -->
 # vue-assistant-kit
@@ -21,8 +21,8 @@
 
 | 包名 | 描述 | 版本 |
 |---------|-------------|---------|
-| [@vue-assistant-kit/core](./packages/core) | 核心组件和钩子 | ![npm](https://img.shields.io/npm/v/@vue-assistant-kit/core) |
-| [@vue-assistant-kit/theme](./packages/theme) | 主题系统 | ![npm](https://img.shields.io/npm/v/@vue-assistant-kit/theme) ｜
+| [@vue-assistant-kit/core](./packages/core) | 核心组件和钩子 | ![npm](https://www.npmjs.com/package/@vue-assistant-kit/core) |
+| [@vue-assistant-kit/theme](./packages/theme) | 主题系统 | ![npm](https://www.npmjs.com/package/@vue-assistant-kit/theme) ｜
 
 ## 快速开始
 

@@ -52,11 +52,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vue-assistant-kit/vue-assistant-kit.git",
+    "url": "https://github.com/94TSM/vue-assistant-kit",
     "directory": "packages/theme"
   },
-  "homepage": "https://github.com/vue-assistant-kit/vue-assistant-kit#readme",
+  "homepage": "https://github.com/94TSM/vue-assistant-kit#readme",
   "bugs": {
-    "url": "https://github.com/vue-assistant-kit/vue-assistant-kit/issues"
+    "url": "https://github.com/94TSM/vue-assistant-kit/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
