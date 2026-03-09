@@ -83,4 +83,4 @@ pnpm lint
 
 ## 许可证
 
-MIT
+MIT License
