@@ -1,4 +1,4 @@
-import { ref, watch, type Ref } from 'vue'
+import { ref, watch } from 'vue'
 import type {
   Message,
   MessageCreateOptions,
@@ -36,7 +36,6 @@ export function useChat(options: UseChatOptions = {}): UseChatReturn {
     headers = {},
     body = {},
     persistenceKey,
-    maxRetries = 3,
     timeout = 30000,
     onSend,
     onReceive,

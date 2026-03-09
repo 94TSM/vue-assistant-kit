@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, computed, watch, onMounted } from 'vue'
-import { useAIChatContext } from '../../hooks/useAIChatContext'
 import type { MessageProps, MessageEmits } from '../../types'
 
 const props = withDefaults(defineProps<MessageProps>(), {
@@ -16,8 +15,6 @@ const props = withDefaults(defineProps<MessageProps>(), {
 })
 
 const emit = defineEmits<MessageEmits>()
-
-const context = useAIChatContext()
 
 // Display content (for streaming animation)
 const displayContent = ref('')

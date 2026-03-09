@@ -1,4 +1,4 @@
-import { ref, type Ref } from 'vue'
+import { ref } from 'vue'
 import type { UseCompletionOptions, UseCompletionReturn } from '../types'
 
 /**

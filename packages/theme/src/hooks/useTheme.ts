@@ -1,8 +1,7 @@
-import { ref, watch, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import {
   getTheme,
   setTheme as setThemeUtil,
-  toggleTheme as toggleThemeUtil,
   onThemeChange,
   saveTheme,
   type Theme,

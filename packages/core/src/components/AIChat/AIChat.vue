@@ -2,7 +2,7 @@
 import { computed, provide, watch } from 'vue';
 import { useChat } from '../../hooks/useChat';
 import { AIChatContextKey } from '../../hooks/useAIChatContext';
-import type { AIChatProps, AIChatEmits, Message } from '../../types';
+import type { AIChatProps, AIChatEmits } from '../../types';
 
 const props = withDefaults(defineProps<AIChatProps>(), {
   api: '/api/chat',

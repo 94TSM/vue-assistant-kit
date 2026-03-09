@@ -27,7 +27,6 @@ const scrollContainerRef = ref<HTMLElement | null>(null)
 
 // Auto scroll state
 const shouldAutoScroll = ref(true)
-const isUserScrolling = ref(false)
 
 // Check if user is at bottom
 const isAtBottom = () => {

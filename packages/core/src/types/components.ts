@@ -1,5 +1,5 @@
-import type { Message, MessageCreateOptions } from './message'
-import type { MessageStatus, ThemeMode, LoadingMode, TimeMode, ActionLayout, ActionType } from './enums'
+import type { Message } from './message'
+import type { ThemeMode, LoadingMode, TimeMode, ActionLayout, ActionType } from './enums'
 
 /**
  * AIChat component props

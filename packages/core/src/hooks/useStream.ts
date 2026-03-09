@@ -1,5 +1,5 @@
-import { ref, type Ref } from 'vue'
-import type { UseStreamOptions, UseStreamReturn, StreamProtocol } from '../types'
+import { ref } from 'vue'
+import type { UseStreamOptions, UseStreamReturn } from '../types'
 
 /**
  * Hook for handling streaming data from various protocols
@@ -48,7 +48,7 @@ export function useStream(options: UseStreamOptions = {}): UseStreamReturn {
       onData?.(chunk)
     }
 
-    eventSource.onerror = (event) => {
+    eventSource.onerror = () => {
       const err = new Error('SSE connection error')
       error.value = err
       onError?.(err)
@@ -125,7 +125,7 @@ export function useStream(options: UseStreamOptions = {}): UseStreamReturn {
       onData?.(chunk)
     }
 
-    websocket.onerror = (event) => {
+    websocket.onerror = () => {
       const err = new Error('WebSocket error')
       error.value = err
       onError?.(err)
