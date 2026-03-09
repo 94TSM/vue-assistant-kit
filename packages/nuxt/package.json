@@ -1,6 +1,6 @@
 {
   "name": "@vue-assistant-kit/nuxt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Nuxt 3 module for vue-assistant-kit - Auto-import components, composables, and theme styles",
   "keywords": [
     "nuxt",

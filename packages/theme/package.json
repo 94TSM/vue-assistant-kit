@@ -1,6 +1,6 @@
 {
   "name": "@vue-assistant-kit/theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Theme system for vue-assistant-kit - A comprehensive CSS variables driven theme system with light/dark modes",
   "keywords": [
     "vue",

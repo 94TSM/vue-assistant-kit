@@ -1,6 +1,6 @@
 {
   "name": "@vue-assistant-kit/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core components and hooks for vue-assistant-kit - A comprehensive Vue 3 AI chat component library with deep Vercel AI SDK integration",
   "keywords": [
     "vue",
