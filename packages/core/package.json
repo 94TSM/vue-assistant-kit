@@ -62,5 +62,9 @@
   "homepage": "https://github.com/vue-assistant-kit/vue-assistant-kit#readme",
   "bugs": {
     "url": "https://github.com/vue-assistant-kit/vue-assistant-kit/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
