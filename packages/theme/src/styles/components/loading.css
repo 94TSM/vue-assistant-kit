@@ -1,0 +1,86 @@
+/* vue-assistant-kit 加载和状态组件样式 */
+
+/* ==================== 加载动画 ==================== */
+.ai-chat-loading {
+  display: flex;
+  align-items: center;
+  gap: var(--ai-chat-spacing-xs);
+}
+
+.ai-chat-loading-dot {
+  width: var(--ai-chat-loading-dot-size);
+  height: var(--ai-chat-loading-dot-size);
+  background-color: var(--ai-chat-loading-dot-color);
+  border-radius: 50%;
+  animation: bounce var(--ai-chat-loading-dot-animation-duration) infinite ease-in-out;
+}
+
+.ai-chat-loading-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.ai-chat-loading-dot:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.ai-chat-loading-dot:nth-child(3) {
+  animation-delay: 0.32s;
+}
+
+/* ==================== 旋转加载 ==================== */
+.ai-chat-spinner {
+  width: var(--ai-chat-loading-dot-size);
+  height: var(--ai-chat-loading-dot-size);
+  border: 2px solid var(--ai-chat-border-color);
+  border-top-color: var(--ai-chat-primary-color);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ==================== 状态提示 ==================== */
+.ai-chat-status {
+  padding: var(--ai-chat-spacing-md);
+  border-radius: var(--ai-chat-border-radius);
+  display: flex;
+  align-items: center;
+  gap: var(--ai-chat-spacing-sm);
+}
+
+/* 错误状态 */
+.ai-chat-error {
+  color: var(--ai-chat-error-color);
+  background-color: var(--ai-chat-error-color-bg);
+  border: 1px solid var(--ai-chat-error-color-border);
+}
+
+/* 成功状态 */
+.ai-chat-success {
+  color: var(--ai-chat-success-color);
+  background-color: var(--ai-chat-success-color-bg);
+  border: 1px solid var(--ai-chat-success-color-border);
+}
+
+/* 警告状态 */
+.ai-chat-warning {
+  color: var(--ai-chat-warning-color);
+  background-color: var(--ai-chat-warning-color-bg);
+  border: 1px solid var(--ai-chat-warning-color-border);
+}
+
+/* 信息状态 */
+.ai-chat-info {
+  color: var(--ai-chat-info-color);
+  background-color: var(--ai-chat-info-color-bg);
+  border: 1px solid var(--ai-chat-info-color-border);
+}
+
+/* ==================== 状态图标 ==================== */
+.ai-chat-status__icon {
+  font-size: var(--ai-chat-font-size-lg);
+  flex-shrink: 0;
+}
+
+.ai-chat-status__text {
+  flex: 1;
+  word-wrap: break-word;
+}

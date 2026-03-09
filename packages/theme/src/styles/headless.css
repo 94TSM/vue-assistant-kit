@@ -1,0 +1,57 @@
+/* vue-assistant-kit Headless 无样式模式 */
+
+/*
+ * Headless模式说明:
+ *
+ * Headless模式允许开发者完全自定义组件样式,不使用任何默认样式。
+ * 这对于需要完全控制UI外观的场景非常有用。
+ *
+ * 使用方法:
+ * 1. 不引入任何样式文件
+ * 2. 使用组件提供的CSS类名自定义样式
+ * 3. 通过CSS变量或直接样式覆盖实现自定义
+ *
+ * 示例:
+ * ```js
+ * // 不引入默认样式
+ * import { AIChat, MessageList, Message, ChatInput } from '@vue-assistant-kit/core'
+ *
+ * // 自定义样式
+ * import './my-custom-styles.css'
+ * ```
+ *
+ * 组件类名参考:
+ * - .ai-chat - 根容器
+ * - .ai-chat-message-list - 消息列表
+ * - .ai-chat-message - 消息项
+ * - .ai-chat-message-user - 用户消息
+ * - .ai-chat-message-assistant - 助手消息
+ * - .ai-chat-message-bubble - 消息气泡
+ * - .ai-chat-message-avatar - 消息头像
+ * - .ai-chat-input - 输入框
+ * - .ai-chat-button - 按钮
+ * - .ai-chat-loading - 加载动画
+ * - .ai-chat-code-block - 代码块
+ * - .ai-chat-code-inline - 行内代码
+ *
+ * 自定义示例:
+ * ```css
+ * .ai-chat {
+ *   font-family: 'My Custom Font', sans-serif;
+ *   background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+ * }
+ *
+ * .ai-chat-message-bubble {
+ *   border-radius: 20px;
+ *   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ * }
+ *
+ * .ai-chat-input {
+ *   border: 2px solid #e0e0e0;
+ *   background: #fafafa;
+ * }
+ * ```
+ */
+
+/* Headless模式不包含任何默认样式 */
+/* 开发者需要完全自定义所有样式 */

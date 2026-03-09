@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["node", "nuxt/schema"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true,
+    "noEmit": false
+  },
+  "include": ["src/module.ts", "src/types.ts", "src/index.ts"],
+  "exclude": ["node_modules", "dist", "src/plugins"]
+}

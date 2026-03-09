@@ -1,0 +1,166 @@
+/* vue-assistant-kit 消息组件样式 */
+
+/* ==================== 消息容器 ==================== */
+.ai-chat-message {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ai-chat-spacing-sm);
+  padding: var(--ai-chat-bubble-padding);
+  border-radius: var(--ai-chat-border-radius-lg);
+  transition: all var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+  max-width: 100%;
+  animation: fadeIn var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+}
+
+/* ==================== 用户消息 ==================== */
+.ai-chat-message-user {
+  justify-content: flex-end;
+  background: var(--ai-chat-gradient-primary);
+  color: var(--ai-chat-user-bubble-color);
+  margin-left: auto;
+  border-radius: var(--ai-chat-user-bubble-border-radius);
+  box-shadow: var(--ai-chat-shadow);
+}
+
+/* ==================== 助手消息 ==================== */
+.ai-chat-message-assistant {
+  justify-content: flex-start;
+  background-color: transparent; /* 移除背景色 */
+  color: var(--ai-chat-assistant-bubble-color);
+  margin-right: auto;
+  border-radius: var(--ai-chat-assistant-bubble-border-radius);
+  box-shadow: none; /* 移除阴影 */
+}
+
+/* ==================== 消息状态 ==================== */
+.ai-chat-message--streaming {
+  opacity: 0.95;
+}
+
+.ai-chat-message--error {
+  background-color: var(--ai-chat-error-color-bg);
+  border: 1px solid var(--ai-chat-error-color-border);
+  color: var(--ai-chat-error-color);
+}
+
+/* ==================== 消息头部 ==================== */
+.ai-chat-message__header {
+  display: flex;
+  align-items: center;
+  gap: var(--ai-chat-spacing-sm);
+  margin-bottom: var(--ai-chat-spacing-xs);
+}
+
+/* ==================== 消息头像 ==================== */
+.ai-chat-message__avatar {
+  width: var(--ai-chat-avatar-size);
+  height: var(--ai-chat-avatar-size);
+  border-radius: var(--ai-chat-avatar-border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--ai-chat-font-size-sm);
+  font-weight: var(--ai-chat-font-weight-medium);
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: var(--ai-chat-shadow-sm);
+}
+
+.ai-chat-message__avatar--user {
+  background: var(--ai-chat-gradient-primary);
+  color: white;
+}
+
+.ai-chat-message__avatar--assistant {
+  background: var(--ai-chat-gradient-success);
+  color: white;
+}
+
+.ai-chat-message__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==================== 消息时间 ==================== */
+.ai-chat-message__time {
+  font-size: var(--ai-chat-font-size-xs);
+  opacity: var(--ai-chat-opacity-hover);
+  color: inherit;
+}
+
+/* ==================== 消息内容 ==================== */
+.ai-chat-message__content {
+  flex: 1;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  min-height: 1.5em;
+}
+
+/* ==================== 流式输出光标 ==================== */
+.ai-chat-message__cursor {
+  animation: blink var(--ai-chat-transition-duration) infinite;
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: currentColor;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+}
+
+/* ==================== 消息操作按钮 ==================== */
+.ai-chat-message__actions {
+  display: flex;
+  gap: var(--ai-chat-spacing-xs);
+  opacity: 0;
+  transition: opacity var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+  margin-top: var(--ai-chat-spacing-xs);
+}
+
+.ai-chat-message:hover .ai-chat-message__actions {
+  opacity: 1;
+}
+
+.ai-chat-message__action {
+  padding: var(--ai-chat-spacing-xs) var(--ai-chat-spacing-sm);
+  border: none;
+  background: var(--ai-chat-action-bg, rgba(0, 0, 0, 0.05));
+  border-radius: var(--ai-chat-border-radius-sm);
+  cursor: pointer;
+  font-size: var(--ai-chat-font-size-sm);
+  transition: all var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.ai-chat-message__action:hover {
+  background: var(--ai-chat-action-bg-hover, rgba(0, 0, 0, 0.1));
+  transform: translateY(-1px);
+}
+
+/* 用户消息操作按钮 */
+.ai-chat-message-user .ai-chat-message__action {
+  --ai-chat-action-bg: var(--ai-chat-action-bg-user);
+  --ai-chat-action-bg-hover: var(--ai-chat-action-bg-user-hover);
+}
+
+/* 助手消息操作按钮 */
+.ai-chat-message-assistant .ai-chat-message__action {
+  --ai-chat-action-bg: var(--ai-chat-action-bg);
+  --ai-chat-action-bg-hover: var(--ai-chat-action-bg-hover);
+}
+
+/* ==================== 错误状态 ==================== */
+.ai-chat-message__error-content {
+  display: flex;
+  align-items: center;
+  gap: var(--ai-chat-spacing-sm);
+}
+
+.ai-chat-message__error-icon {
+  font-size: var(--ai-chat-font-size-lg);
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@vue-assistant-kit/theme",
+  "version": "0.0.1",
+  "description": "Theme system for vue-assistant-kit - A comprehensive CSS variables driven theme system with light/dark modes",
+  "keywords": [
+    "vue",
+    "vue3",
+    "ai",
+    "chat",
+    "theme",
+    "styles",
+    "css-variables",
+    "dark-mode",
+    "light-mode",
+    "headless"
+  ],
+  "author": "vue-assistant-kit",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./dist/style.css",
+    "./variables.css": "./dist/variables.css",
+    "./light.css": "./dist/light.css",
+    "./dark.css": "./dist/dark.css",
+    "./headless.css": "./dist/headless.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "vite": "^5.0.11",
+    "vue-tsc": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vue-assistant-kit/vue-assistant-kit.git",
+    "directory": "packages/theme"
+  },
+  "homepage": "https://github.com/vue-assistant-kit/vue-assistant-kit#readme",
+  "bugs": {
+    "url": "https://github.com/vue-assistant-kit/vue-assistant-kit/issues"
+  }
+}

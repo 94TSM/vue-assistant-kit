@@ -1,0 +1,115 @@
+/* vue-assistant-kit 代码块样式 */
+
+/* ==================== 代码块容器 ==================== */
+.ai-chat-code-block {
+  background-color: var(--ai-chat-code-bg);
+  color: var(--ai-chat-code-color);
+  font-family: var(--ai-chat-code-font-family);
+  font-size: var(--ai-chat-code-font-size);
+  line-height: var(--ai-chat-code-line-height);
+  padding: var(--ai-chat-code-padding);
+  border-radius: var(--ai-chat-code-border-radius);
+  overflow-x: auto;
+  margin: var(--ai-chat-spacing-sm) 0;
+  position: relative;
+}
+
+/* ==================== 代码块头部 ==================== */
+.ai-chat-code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--ai-chat-spacing-xs) var(--ai-chat-spacing-sm);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: var(--ai-chat-code-border-radius) var(--ai-chat-code-border-radius) 0 0;
+  margin: calc(var(--ai-chat-code-padding) * -1);
+  margin-bottom: var(--ai-chat-spacing-sm);
+  padding: var(--ai-chat-spacing-sm) var(--ai-chat-code-padding);
+}
+
+.ai-chat-code-language {
+  font-size: var(--ai-chat-font-size-xs);
+  color: var(--ai-chat-text-color-secondary);
+  text-transform: uppercase;
+  font-weight: var(--ai-chat-font-weight-medium);
+}
+
+.ai-chat-code-copy {
+  padding: var(--ai-chat-spacing-xs) var(--ai-chat-spacing-sm);
+  background: transparent;
+  border: 1px solid var(--ai-chat-border-color);
+  border-radius: var(--ai-chat-border-radius-sm);
+  cursor: pointer;
+  font-size: var(--ai-chat-font-size-xs);
+  color: var(--ai-chat-text-color-secondary);
+  transition: all var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+}
+
+.ai-chat-code-copy:hover {
+  background-color: var(--ai-chat-bg-color-hover);
+  color: var(--ai-chat-text-color);
+}
+
+/* ==================== 代码内容 ==================== */
+.ai-chat-code-content {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ai-chat-scrollbar-thumb-bg) transparent;
+}
+
+.ai-chat-code-content::-webkit-scrollbar {
+  height: var(--ai-chat-scrollbar-height);
+}
+
+.ai-chat-code-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ai-chat-code-content::-webkit-scrollbar-thumb {
+  background: var(--ai-chat-scrollbar-thumb-bg);
+  border-radius: var(--ai-chat-scrollbar-border-radius);
+}
+
+/* ==================== 行内代码 ==================== */
+.ai-chat-code-inline {
+  background-color: var(--ai-chat-code-bg);
+  color: var(--ai-chat-code-color);
+  font-family: var(--ai-chat-code-font-family);
+  font-size: 0.9em;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ==================== 代码行号 ==================== */
+.ai-chat-code-line-numbers {
+  counter-reset: line;
+  padding-left: var(--ai-chat-spacing-lg);
+  position: relative;
+}
+
+.ai-chat-code-line-numbers::before {
+  content: '';
+  position: absolute;
+  left: var(--ai-chat-spacing-md);
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--ai-chat-border-color);
+}
+
+.ai-chat-code-line {
+  counter-increment: line;
+  position: relative;
+  padding-left: var(--ai-chat-spacing-sm);
+}
+
+.ai-chat-code-line::before {
+  content: counter(line);
+  position: absolute;
+  left: calc(var(--ai-chat-spacing-lg) * -1);
+  width: var(--ai-chat-spacing-md);
+  text-align: right;
+  color: var(--ai-chat-text-color-tertiary);
+  font-size: var(--ai-chat-font-size-xs);
+  user-select: none;
+}

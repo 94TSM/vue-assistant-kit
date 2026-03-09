@@ -1,0 +1,66 @@
+{
+  "name": "@vue-assistant-kit/nuxt",
+  "version": "0.0.1",
+  "description": "Nuxt 3 module for vue-assistant-kit - Auto-import components, composables, and theme styles",
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "vue",
+    "vue3",
+    "ai",
+    "chat",
+    "assistant",
+    "vercel-ai-sdk",
+    "ssr"
+  ],
+  "author": "vue-assistant-kit",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/module.mjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/module.js",
+      "require": "./dist/module.cjs",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "prepack": "vite build",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.9.0",
+    "@vue-assistant-kit/core": "workspace:*",
+    "@vue-assistant-kit/theme": "workspace:*"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^0.5.5",
+    "@nuxt/schema": "^3.9.0",
+    "@nuxt/test-utils": "^3.9.0",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "nuxt": "^3.9.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vitest": "^1.2.0",
+    "vue-tsc": "^2.0.0"
+  },
+  "peerDependencies": {
+    "nuxt": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vue-assistant-kit/vue-assistant-kit.git",
+    "directory": "packages/nuxt"
+  },
+  "homepage": "https://github.com/vue-assistant-kit/vue-assistant-kit#readme",
+  "bugs": {
+    "url": "https://github.com/vue-assistant-kit/vue-assistant-kit/issues"
+  }
+}

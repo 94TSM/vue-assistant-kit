@@ -1,0 +1,169 @@
+/* vue-assistant-kit 主题CSS变量定义 */
+
+:root {
+  /* ==================== 1. 主色调 ==================== */
+  --ai-chat-primary-color: #1890ff;
+  --ai-chat-primary-color-hover: #40a9ff;
+  --ai-chat-primary-color-active: #096dd9;
+  --ai-chat-primary-color-disabled: #b5d8ff;
+
+  /* ==================== 2. 背景色 ==================== */
+  --ai-chat-bg-color: #ffffff;
+  --ai-chat-bg-color-secondary: #f5f5f5;
+  --ai-chat-bg-color-tertiary: #fafafa;
+  --ai-chat-bg-color-hover: #f0f0f0;
+
+  /* ==================== 3. 文字色 ==================== */
+  --ai-chat-text-color: #333333;
+  --ai-chat-text-color-secondary: #666666;
+  --ai-chat-text-color-tertiary: #999999;
+  --ai-chat-text-color-disabled: #bfbfbf;
+
+  /* ==================== 4. 边框 ==================== */
+  --ai-chat-border-color: #e8e8e8;
+  --ai-chat-border-color-hover: #d9d9d9;
+  --ai-chat-border-color-active: #1890ff;
+  --ai-chat-border-radius: 8px;
+  --ai-chat-border-radius-sm: 4px;
+  --ai-chat-border-radius-lg: 12px;
+  --ai-chat-border-width: 1px;
+
+  /* ==================== 5. 阴影 ==================== */
+  --ai-chat-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --ai-chat-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+  --ai-chat-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --ai-chat-shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.16);
+
+  /* ==================== 6. 间距 ==================== */
+  --ai-chat-spacing-xs: 4px;
+  --ai-chat-spacing-sm: 8px;
+  --ai-chat-spacing-md: 16px;
+  --ai-chat-spacing-lg: 24px;
+  --ai-chat-spacing-xl: 32px;
+  --ai-chat-spacing-xxl: 48px;
+
+  /* ==================== 7. 字体 ==================== */
+  --ai-chat-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --ai-chat-font-size-xs: 10px;
+  --ai-chat-font-size-sm: 12px;
+  --ai-chat-font-size: 14px;
+  --ai-chat-font-size-lg: 16px;
+  --ai-chat-font-size-xl: 18px;
+  --ai-chat-font-size-xxl: 20px;
+  --ai-chat-font-weight-normal: 400;
+  --ai-chat-font-weight-medium: 500;
+  --ai-chat-font-weight-bold: 600;
+  --ai-chat-line-height: 1.5;
+  --ai-chat-line-height-tight: 1.25;
+  --ai-chat-line-height-loose: 1.75;
+
+  /* ==================== 8. 动画 ==================== */
+  --ai-chat-transition-duration: 0.2s;
+  --ai-chat-transition-duration-slow: 0.3s;
+  --ai-chat-transition-duration-fast: 0.1s;
+  --ai-chat-transition-timing: ease-in-out;
+  --ai-chat-transition-timing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ==================== 9. 消息气泡 ==================== */
+  --ai-chat-user-bubble-bg: #1890ff;
+  --ai-chat-user-bubble-color: #ffffff;
+  --ai-chat-user-bubble-border-radius: 12px 12px 4px 12px;
+  --ai-chat-assistant-bubble-bg: transparent;
+  --ai-chat-assistant-bubble-color: #333333;
+  --ai-chat-assistant-bubble-border-radius: 12px 12px 12px 4px;
+  --ai-chat-bubble-padding: 12px 16px;
+  --ai-chat-bubble-max-width: 70%;
+
+  /* ==================== 10. 代码块 ==================== */
+  --ai-chat-code-bg: #f6f8fa;
+  --ai-chat-code-color: #24292e;
+  --ai-chat-code-font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  --ai-chat-code-font-size: 13px;
+  --ai-chat-code-border-radius: 6px;
+  --ai-chat-code-padding: 16px;
+  --ai-chat-code-line-height: 1.6;
+
+  /* ==================== 11. 状态色 ==================== */
+  --ai-chat-success-color: #52c41a;
+  --ai-chat-success-color-bg: #f6ffed;
+  --ai-chat-success-color-border: #b7eb8f;
+  --ai-chat-warning-color: #faad14;
+  --ai-chat-warning-color-bg: #fffbe6;
+  --ai-chat-warning-color-border: #ffe58f;
+  --ai-chat-error-color: #ff4d4f;
+  --ai-chat-error-color-bg: #fff2f0;
+  --ai-chat-error-color-border: #ffccc7;
+  --ai-chat-info-color: #1890ff;
+  --ai-chat-info-color-bg: #e6f7ff;
+  --ai-chat-info-color-border: #91d5ff;
+
+  /* ==================== 12. 输入框 ==================== */
+  --ai-chat-input-bg: #ffffff;
+  --ai-chat-input-color: #333333;
+  --ai-chat-input-border-color: #d9d9d9;
+  --ai-chat-input-border-color-hover: #40a9ff;
+  --ai-chat-input-border-color-focus: #1890ff;
+  --ai-chat-input-border-radius: 8px;
+  --ai-chat-input-padding: 12px 16px;
+  --ai-chat-input-font-size: 14px;
+  --ai-chat-input-placeholder-color: #bfbfbf;
+  --ai-chat-input-min-height: 40px;
+  --ai-chat-input-max-height: 200px;
+
+  /* ==================== 13. 按钮 ==================== */
+  --ai-chat-button-height: 32px;
+  --ai-chat-button-height-sm: 24px;
+  --ai-chat-button-height-lg: 40px;
+  --ai-chat-button-padding: 0 16px;
+  --ai-chat-button-padding-sm: 0 8px;
+  --ai-chat-button-padding-lg: 0 24px;
+  --ai-chat-button-border-radius: 6px;
+  --ai-chat-button-font-size: 14px;
+  --ai-chat-button-font-size-sm: 12px;
+  --ai-chat-button-font-size-lg: 16px;
+
+  /* ==================== 14. 头像 ==================== */
+  --ai-chat-avatar-size: 36px;
+  --ai-chat-avatar-size-sm: 24px;
+  --ai-chat-avatar-size-lg: 48px;
+  --ai-chat-avatar-border-radius: 50%;
+  --ai-chat-avatar-bg: #e8e8e8;
+  --ai-chat-avatar-color: #666666;
+
+  /* ==================== 15. 滚动条 ==================== */
+  --ai-chat-scrollbar-width: 6px;
+  --ai-chat-scrollbar-height: 6px;
+  --ai-chat-scrollbar-track-bg: #f1f1f1;
+  --ai-chat-scrollbar-thumb-bg: #c1c1c1;
+  --ai-chat-scrollbar-thumb-bg-hover: #a8a8a8;
+  --ai-chat-scrollbar-border-radius: 3px;
+
+  /* ==================== 16. 加载动画 ==================== */
+  --ai-chat-loading-dot-size: 8px;
+  --ai-chat-loading-dot-color: #1890ff;
+  --ai-chat-loading-dot-animation-duration: 1.4s;
+
+  /* ==================== 17. Z-index层级 ==================== */
+  --ai-chat-z-index-dropdown: 1000;
+  --ai-chat-z-index-modal: 1050;
+  --ai-chat-z-index-popover: 1060;
+  --ai-chat-z-index-tooltip: 1070;
+  --ai-chat-z-index-message: 1080;
+
+  /* ==================== 18. 其他 ==================== */
+  --ai-chat-opacity-disabled: 0.5;
+  --ai-chat-opacity-hover: 0.8;
+  --ai-chat-cursor-disabled: not-allowed;
+  --ai-chat-cursor-pointer: pointer;
+
+  /* ==================== 19. 渐变色 ==================== */
+  --ai-chat-gradient-primary: linear-gradient(135deg, var(--ai-chat-primary-color) 0%, var(--ai-chat-primary-color-hover) 100%);
+  --ai-chat-gradient-success: linear-gradient(135deg, var(--ai-chat-success-color) 0%, #34d399 100%);
+  --ai-chat-gradient-error: linear-gradient(135deg, var(--ai-chat-error-color) 0%, #ff7875 100%);
+
+  /* ==================== 20. 操作按钮背景色 ==================== */
+  --ai-chat-action-bg: rgba(0, 0, 0, 0.05);
+  --ai-chat-action-bg-hover: rgba(0, 0, 0, 0.1);
+  --ai-chat-action-bg-user: rgba(255, 255, 255, 0.15);
+  --ai-chat-action-bg-user-hover: rgba(255, 255, 255, 0.25);
+}

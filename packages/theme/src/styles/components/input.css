@@ -1,0 +1,161 @@
+/* vue-assistant-kit 输入框组件样式 */
+
+/* ==================== 输入框容器 ==================== */
+.ai-chat-input-container {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--ai-chat-spacing-md);
+  padding: var(--ai-chat-spacing-lg);
+  background-color: var(--ai-chat-bg-color);
+  border-top: 1px solid var(--ai-chat-border-color);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03);
+  flex-shrink: 0; /* 防止输入框被压缩 */
+  position: sticky; /* 粘性定位，确保固定在底部 */
+  bottom: 0; /* 固定在底部 */
+  z-index: 10; /* 确保输入框在消息列表之上 */
+}
+
+.ai-chat-input-container--disabled {
+  opacity: var(--ai-chat-opacity-disabled);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ==================== 输入框包装器 ==================== */
+.ai-chat-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+/* ==================== 文本输入框 ==================== */
+.ai-chat-textarea {
+  width: 100%;
+  padding: var(--ai-chat-input-padding);
+  border: var(--ai-chat-border-width) solid var(--ai-chat-input-border-color);
+  border-radius: var(--ai-chat-input-border-radius);
+  font-family: var(--ai-chat-font-family);
+  font-size: var(--ai-chat-input-font-size);
+  line-height: var(--ai-chat-line-height);
+  color: var(--ai-chat-input-color);
+  background-color: var(--ai-chat-input-bg);
+  resize: none;
+  outline: none;
+  transition: all var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+  box-shadow: var(--ai-chat-shadow-sm);
+}
+
+.ai-chat-textarea:hover {
+  border-color: var(--ai-chat-input-border-color-hover);
+  box-shadow: var(--ai-chat-shadow);
+}
+
+.ai-chat-textarea:focus {
+  border-color: var(--ai-chat-input-border-color-focus);
+  box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.1);
+}
+
+.ai-chat-textarea::placeholder {
+  color: var(--ai-chat-input-placeholder-color);
+}
+
+.ai-chat-textarea:disabled {
+  background-color: var(--ai-chat-bg-color-tertiary);
+  cursor: not-allowed;
+  opacity: var(--ai-chat-opacity-disabled);
+}
+
+/* ==================== 字符计数 ==================== */
+.ai-chat-input-count {
+  position: absolute;
+  bottom: var(--ai-chat-spacing-xs);
+  right: var(--ai-chat-spacing-sm);
+  font-size: var(--ai-chat-font-size-xs);
+  color: var(--ai-chat-text-color-tertiary);
+  background-color: var(--ai-chat-bg-color);
+  padding: 2px 6px;
+  border-radius: var(--ai-chat-border-radius-sm);
+}
+
+.ai-chat-input-count--exceeded {
+  color: var(--ai-chat-error-color);
+  font-weight: var(--ai-chat-font-weight-medium);
+}
+
+/* ==================== 操作按钮容器 ==================== */
+.ai-chat-input-actions {
+  display: flex;
+  gap: var(--ai-chat-spacing-sm);
+  align-items: flex-end;
+}
+
+/* ==================== 按钮基础样式 ==================== */
+.ai-chat-button {
+  padding: var(--ai-chat-button-padding);
+  border: none;
+  border-radius: var(--ai-chat-button-border-radius);
+  font-size: var(--ai-chat-button-font-size);
+  font-weight: var(--ai-chat-font-weight-medium);
+  cursor: pointer;
+  transition: all var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--ai-chat-button-height);
+  min-height: var(--ai-chat-button-height);
+  box-shadow: var(--ai-chat-shadow-sm);
+}
+
+.ai-chat-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--ai-chat-shadow);
+}
+
+.ai-chat-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.ai-chat-button:disabled {
+  cursor: not-allowed;
+  opacity: var(--ai-chat-opacity-disabled);
+}
+
+/* ==================== 发送按钮 ==================== */
+.ai-chat-button--send {
+  background: var(--ai-chat-gradient-primary);
+  color: white;
+}
+
+.ai-chat-button--send:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--ai-chat-primary-color-hover) 0%, var(--ai-chat-primary-color) 100%);
+}
+
+.ai-chat-button--send:disabled {
+  background: var(--ai-chat-bg-color-tertiary);
+  color: var(--ai-chat-text-color-tertiary);
+  box-shadow: none;
+}
+
+/* ==================== 停止按钮 ==================== */
+.ai-chat-button--abort {
+  background: var(--ai-chat-gradient-error);
+  color: white;
+}
+
+.ai-chat-button--abort:hover {
+  background: linear-gradient(135deg, #ff7875 0%, var(--ai-chat-error-color) 100%);
+}
+
+/* ==================== 按钮尺寸变体 ==================== */
+.ai-chat-button--sm {
+  padding: var(--ai-chat-button-padding-sm);
+  font-size: var(--ai-chat-button-font-size-sm);
+  min-width: var(--ai-chat-button-height-sm);
+  min-height: var(--ai-chat-button-height-sm);
+}
+
+.ai-chat-button--lg {
+  padding: var(--ai-chat-button-padding-lg);
+  font-size: var(--ai-chat-button-font-size-lg);
+  min-width: var(--ai-chat-button-height-lg);
+  min-height: var(--ai-chat-button-height-lg);
+}

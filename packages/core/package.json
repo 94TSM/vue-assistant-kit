@@ -1,0 +1,66 @@
+{
+  "name": "@vue-assistant-kit/core",
+  "version": "0.0.1",
+  "description": "Core components and hooks for vue-assistant-kit - A comprehensive Vue 3 AI chat component library with deep Vercel AI SDK integration",
+  "keywords": [
+    "vue",
+    "vue3",
+    "ai",
+    "chat",
+    "assistant",
+    "components",
+    "hooks",
+    "vercel-ai-sdk",
+    "typescript",
+    "ssr"
+  ],
+  "author": "vue-assistant-kit",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./dist/style.css",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "type-check": "vue-tsc --noEmit",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts,.tsx,.vue",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "dependencies": {
+    "@ai-sdk/vue": "^0.0.40",
+    "ai": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/test-utils": "^2.4.4",
+    "vite": "^5.0.11",
+    "vue-tsc": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vue-assistant-kit/vue-assistant-kit.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/vue-assistant-kit/vue-assistant-kit#readme",
+  "bugs": {
+    "url": "https://github.com/vue-assistant-kit/vue-assistant-kit/issues"
+  }
+}

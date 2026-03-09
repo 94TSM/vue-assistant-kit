@@ -1,0 +1,51 @@
+{
+  "name": "vue-assistant-kit",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A comprehensive Vue 3 AI chat component library with deep Vercel AI SDK integration",
+  "keywords": [
+    "vue",
+    "vue3",
+    "ai",
+    "chat",
+    "assistant",
+    "vercel-ai-sdk",
+    "components",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,vue,js,jsx,json,md}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@playwright/test": "^1.41.0",
+    "@types/node": "^20.11.0",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/test-utils": "^2.4.4",
+    "happy-dom": "^13.3.8",
+    "prettier": "^3.2.4",
+    "turbo": "^2.0.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-dts": "^3.7.1",
+    "vitest": "^1.2.1",
+    "vue-tsc": "^2.0.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

@@ -1,0 +1,82 @@
+/* vue-assistant-kit 消息列表组件样式 */
+
+/* ==================== 消息列表容器 ==================== */
+.ai-chat-message-list {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: var(--ai-chat-spacing-lg);
+  scrollbar-width: thin;
+  scrollbar-color: var(--ai-chat-scrollbar-thumb-bg) var(--ai-chat-scrollbar-track-bg);
+  min-height: 0; /* 确保flex子元素可以正确收缩 */
+}
+
+/* ==================== 自定义滚动条 ==================== */
+.ai-chat-message-list::-webkit-scrollbar {
+  width: var(--ai-chat-scrollbar-width);
+  height: var(--ai-chat-scrollbar-height);
+}
+
+.ai-chat-message-list::-webkit-scrollbar-track {
+  background: var(--ai-chat-scrollbar-track-bg);
+  border-radius: var(--ai-chat-scrollbar-border-radius);
+}
+
+.ai-chat-message-list::-webkit-scrollbar-thumb {
+  background: var(--ai-chat-scrollbar-thumb-bg);
+  border-radius: var(--ai-chat-scrollbar-border-radius);
+  transition: background-color var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+}
+
+.ai-chat-message-list::-webkit-scrollbar-thumb:hover {
+  background: var(--ai-chat-scrollbar-thumb-bg-hover);
+}
+
+/* ==================== 空状态 ==================== */
+.ai-chat-message-list__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--ai-chat-text-color-tertiary);
+}
+
+/* ==================== 消息分组 ==================== */
+.ai-chat-message-list__group {
+  margin-bottom: var(--ai-chat-spacing-lg);
+  animation: fadeIn var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+}
+
+.ai-chat-message-list__group--user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.ai-chat-message-list__group--assistant {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ==================== 消息项 ==================== */
+.ai-chat-message-list__item {
+  width: 100%;
+  max-width: 75%;
+  margin-bottom: var(--ai-chat-spacing-sm);
+}
+
+/* ==================== 时间分隔线 ==================== */
+.ai-chat-message-list__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--ai-chat-spacing-md) 0;
+}
+
+/* ==================== 加载状态 ==================== */
+.ai-chat-message-list__loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--ai-chat-spacing-lg);
+}

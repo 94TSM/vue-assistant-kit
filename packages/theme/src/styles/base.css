@@ -1,0 +1,76 @@
+/* vue-assistant-kit 基础样式 - 重置和通用样式 */
+
+/* ==================== CSS Reset ==================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ==================== 动画定义 ==================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==================== 通用工具类 ==================== */
+.ai-chat-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.ai-chat-transition {
+  transition: all var(--ai-chat-transition-duration) var(--ai-chat-transition-timing);
+}
+
+.ai-chat-shadow {
+  box-shadow: var(--ai-chat-shadow);
+}
+
+.ai-chat-shadow-sm {
+  box-shadow: var(--ai-chat-shadow-sm);
+}
+
+.ai-chat-shadow-lg {
+  box-shadow: var(--ai-chat-shadow-lg);
+}

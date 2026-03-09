@@ -1,0 +1,42 @@
+/* vue-assistant-kit 容器组件样式 */
+
+/* ==================== AI聊天容器 ==================== */
+.ai-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--ai-chat-bg-color);
+  font-family: var(--ai-chat-font-family);
+  font-size: var(--ai-chat-font-size);
+  line-height: var(--ai-chat-line-height);
+  color: var(--ai-chat-text-color);
+}
+
+.ai-chat--disabled {
+  opacity: var(--ai-chat-opacity-disabled);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ==================== 头部区域 ==================== */
+.ai-chat-header {
+  padding: var(--ai-chat-spacing-md) var(--ai-chat-spacing-lg);
+  border-bottom: 1px solid var(--ai-chat-border-color);
+  background-color: var(--ai-chat-bg-color);
+}
+
+/* ==================== 内容区域 ==================== */
+.ai-chat-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0; /* 确保flex子元素可以正确收缩 */
+}
+
+/* ==================== 底部区域 ==================== */
+.ai-chat-footer {
+  border-top: 1px solid var(--ai-chat-border-color);
+  background-color: var(--ai-chat-bg-color);
+}

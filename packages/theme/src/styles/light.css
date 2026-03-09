@@ -1,0 +1,33 @@
+/* vue-assistant-kit 亮色主题 */
+
+/* 亮色主题继承默认变量,无需额外覆盖 */
+/* 所有默认变量已在variables.css中定义 */
+
+/* 亮色主题特有样式 */
+[data-theme='light'],
+:root:not([data-theme='dark']) {
+  /* 确保使用亮色主题的背景和文字色 */
+  --ai-chat-bg-color: #ffffff;
+  --ai-chat-bg-color-secondary: #f5f5f5;
+  --ai-chat-bg-color-tertiary: #fafafa;
+  --ai-chat-text-color: #333333;
+  --ai-chat-text-color-secondary: #666666;
+  --ai-chat-text-color-tertiary: #999999;
+
+  /* 亮色主题的消息气泡 */
+  --ai-chat-assistant-bubble-bg: transparent;
+  --ai-chat-assistant-bubble-color: #333333; /* 深灰色文字，适合白色背景 */
+
+  /* 亮色主题的代码块 */
+  --ai-chat-code-bg: #f6f8fa;
+  --ai-chat-code-color: #24292e;
+
+  /* 亮色主题的输入框 */
+  --ai-chat-input-bg: #ffffff;
+  --ai-chat-input-color: #333333;
+
+  /* 亮色主题的滚动条 */
+  --ai-chat-scrollbar-track-bg: #f1f1f1;
+  --ai-chat-scrollbar-thumb-bg: #c1c1c1;
+  --ai-chat-scrollbar-thumb-bg-hover: #a8a8a8;
+}

@@ -1,0 +1,76 @@
+/* vue-assistant-kit 暗黑主题 */
+
+[data-theme='dark'] {
+  /* ==================== 主色调 ==================== */
+  --ai-chat-primary-color: #177ddc;
+  --ai-chat-primary-color-hover: #3c9ae8;
+  --ai-chat-primary-color-active: #095cb5;
+  --ai-chat-primary-color-disabled: #1a4d7a;
+
+  /* ==================== 背景色 ==================== */
+  --ai-chat-bg-color: #141414;
+  --ai-chat-bg-color-secondary: #1f1f1f;
+  --ai-chat-bg-color-tertiary: #2a2a2a;
+  --ai-chat-bg-color-hover: #363636;
+
+  /* ==================== 文字色 ==================== */
+  --ai-chat-text-color: #e8e8e8;
+  --ai-chat-text-color-secondary: #a8a8a8;
+  --ai-chat-text-color-tertiary: #6a6a6a;
+  --ai-chat-text-color-disabled: #4a4a4a;
+
+  /* ==================== 边框 ==================== */
+  --ai-chat-border-color: #4a4a4a;
+  --ai-chat-border-color-hover: #5a5a5a;
+  --ai-chat-border-color-active: #177ddc;
+
+  /* ==================== 阴影 ==================== */
+  --ai-chat-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  --ai-chat-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.35);
+  --ai-chat-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.55);
+  --ai-chat-shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.65);
+
+  /* ==================== 消息气泡 ==================== */
+  --ai-chat-user-bubble-bg: #177ddc;
+  --ai-chat-user-bubble-color: #ffffff;
+  --ai-chat-assistant-bubble-bg: transparent;
+  --ai-chat-assistant-bubble-color: #e8e8e8; /* 浅灰色文字，适合深色背景 */
+
+  /* ==================== 代码块 ==================== */
+  --ai-chat-code-bg: #1f1f1f;
+  --ai-chat-code-color: #e8e8e8;
+
+  /* ==================== 状态色 ==================== */
+  --ai-chat-success-color: #49aa19;
+  --ai-chat-success-color-bg: #162312;
+  --ai-chat-success-color-border: #274916;
+  --ai-chat-warning-color: #d89614;
+  --ai-chat-warning-color-bg: #2b2111;
+  --ai-chat-warning-color-border: #594214;
+  --ai-chat-error-color: #d32029;
+  --ai-chat-error-color-bg: #2a1215;
+  --ai-chat-error-color-border: #58181c;
+  --ai-chat-info-color: #177ddc;
+  --ai-chat-info-color-bg: #111d2c;
+  --ai-chat-info-color-border: #15395b;
+
+  /* ==================== 输入框 ==================== */
+  --ai-chat-input-bg: #1f1f1f;
+  --ai-chat-input-color: #e8e8e8;
+  --ai-chat-input-border-color: #4a4a4a;
+  --ai-chat-input-border-color-hover: #177ddc;
+  --ai-chat-input-border-color-focus: #177ddc;
+  --ai-chat-input-placeholder-color: #6a6a6a;
+
+  /* ==================== 头像 ==================== */
+  --ai-chat-avatar-bg: #2a2a2a;
+  --ai-chat-avatar-color: #a8a8a8;
+
+  /* ==================== 滚动条 ==================== */
+  --ai-chat-scrollbar-track-bg: #1f1f1f;
+  --ai-chat-scrollbar-thumb-bg: #4a4a4a;
+  --ai-chat-scrollbar-thumb-bg-hover: #5a5a5a;
+
+  /* ==================== 加载动画 ==================== */
+  --ai-chat-loading-dot-color: #177ddc;
+}
